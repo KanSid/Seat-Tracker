@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Library Seat Dashboard
 
 A mobile-friendly Next.js dashboard for three library seats. Vercel hosts the app; Firebase Realtime Database streams the current seat states to every open browser.
@@ -22,3 +23,6 @@ The dashboard also accepts the normalized `{ "state": "occupied" }` format. A se
 Import this project into Vercel. Add the five `NEXT_PUBLIC_FIREBASE_*` settings from `.env.example` under Project Settings → Environment Variables, then redeploy. The deployed Vercel URL is the public link to open from phones.
 
 Firebase web configuration is public by design. The included database rules allow public reads of seat status and restrict writes to authenticated identities with the `sensor: true` custom claim. Provision this claim only for trusted sensor writers; never put a service-account key or database secret in the website or ESP32 firmware.
+=======
+# Seat-Tracker
+>>>>>>> 0dc64c44f8cc09950e19a3d15f1f24a21ff0b803
