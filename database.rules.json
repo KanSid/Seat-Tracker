@@ -1,0 +1,11 @@
+{
+  "rules": {
+    ".read": true,
+    "seats": {
+      "$seatId": {
+        ".write": "auth != null && auth.token.sensor == true",
+        ".validate": "newData.hasChildren(['state', 'updatedAt']) && (newData.child('state').val() == 'occupied' || newData.child('state').val() == 'available') && newData.child('updatedAt').isNumber()"
+      }
+    }
+  }
+}
